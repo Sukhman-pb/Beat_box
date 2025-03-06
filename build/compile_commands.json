@@ -1,0 +1,217 @@
+[
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgCtx.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgCtx.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgCtx.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgDbg.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgDbg.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgDbg.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgErr.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgErr.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgErr.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgGpio.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgGpio.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgGpio.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgHdl.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgHdl.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgHdl.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgI2C.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgI2C.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgI2C.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgNotify.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgNotify.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgNotify.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgPthAlerts.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgPthAlerts.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgPthAlerts.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgPthTx.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgPthTx.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgPthTx.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgSerial.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgSerial.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgSerial.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgSPI.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgSPI.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgSPI.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgThread.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgThread.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgThread.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lgpio",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgpio -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lgpio.dir/lgUtil.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgUtil.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/lgUtil.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Config/DEV_Config.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config/DEV_Config.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config/DEV_Config.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font12.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font12.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font12.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font12CN.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font12CN.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font12CN.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font16.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font16.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font16.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font20.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font20.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font20.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font24.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font24.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font24.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font24CN.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font24CN.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font24CN.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font48.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font48.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font48.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font50.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font50.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font50.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/Fonts/font8.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font8.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts/font8.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/GUI/GUI_BMP.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI/GUI_BMP.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI/GUI_BMP.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/GUI/GUI_Paint.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI/GUI_Paint.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI/GUI_Paint.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_0in96.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_0in96.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_0in96.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in14.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in14.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in14.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in28.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in28.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in28.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in3.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in3.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in3.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in47.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in47.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in47.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in54.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in54.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in54.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in69.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in69.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in69.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in8.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in8.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in8.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_1in9.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in9.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_1in9.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_2inch.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_2inch.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_2inch.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/lcd",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -DUSE_DEV_LIB -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/lcd.dir/lib/LCD/LCD_2inch4.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_2inch4.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD/LCD_2inch4.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/hal",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/hal.dir/src/helper.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/helper.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/helper.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/hal",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/hal.dir/src/i2c_bus.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/i2c_bus.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/i2c_bus.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/hal",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/hal.dir/src/pwm.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/pwm.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/pwm.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/hal",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/hal.dir/src/sampler.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/sampler.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/sampler.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/hal",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/hal.dir/src/udp.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/udp.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/src/udp.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/app",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/app/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/reaction_timer.dir/src/draw_stuff.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/app/src/draw_stuff.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/app/src/draw_stuff.c"
+},
+{
+  "directory": "/home/gurkirat/cmpt433/work/Assignment2/build/app",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc -D_POSIX_C_SOURCE=200809L -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/app/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/hal/include -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Config -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/Fonts -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/GUI -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lcd/lib/LCD -I/home/gurkirat/cmpt433/work/Assignment2/assignment_2/lgpio/. -g -Wall -Werror -Wpedantic -Wextra -fdiagnostics-color -pthread -std=gnu11 -o CMakeFiles/reaction_timer.dir/src/main.c.o -c /home/gurkirat/cmpt433/work/Assignment2/assignment_2/app/src/main.c",
+  "file": "/home/gurkirat/cmpt433/work/Assignment2/assignment_2/app/src/main.c"
+}
+]

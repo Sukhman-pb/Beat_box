@@ -1,0 +1,14 @@
+/home/gurkirat/cmpt433/work/Assignment2/build/CMakeFiles/edit_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/CMakeFiles/rebuild_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/lgpio/CMakeFiles/lgpio.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/lgpio/CMakeFiles/edit_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/lgpio/CMakeFiles/rebuild_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/lcd/CMakeFiles/lcd.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/lcd/CMakeFiles/edit_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/lcd/CMakeFiles/rebuild_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/hal/CMakeFiles/hal.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/hal/CMakeFiles/edit_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/hal/CMakeFiles/rebuild_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/app/CMakeFiles/reaction_timer.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/app/CMakeFiles/edit_cache.dir
+/home/gurkirat/cmpt433/work/Assignment2/build/app/CMakeFiles/rebuild_cache.dir
