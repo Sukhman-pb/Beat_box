@@ -25,9 +25,9 @@ int main() {
         int16_t x = read_accelerometer_axis(i2c_file_desc, REG_OUT_X_L, REG_OUT_X_H);
         int16_t y = read_accelerometer_axis(i2c_file_desc, REG_OUT_Y_L, REG_OUT_Y_H);
         int16_t z = read_accelerometer_axis(i2c_file_desc, REG_OUT_Z_L, REG_OUT_Z_H);
-        sumX +=x;
-        sumY +=y;
-        sumZ =+z;
+        sumX +=abs(x);
+        sumY +=abs(y);
+        sumZ =+abs(z);
         count++;
         printf("Calibrated readings - X: %d, Y: %d, Z: %d\n", sumX/count, sumY/count, sumZ/count);
         sleep_ms(400);
