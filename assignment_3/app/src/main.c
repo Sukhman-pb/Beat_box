@@ -1,5 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
+#include <unistd.h>
+#include "hal/i2c_bus.h"
+#include "hal/helper.h"
+// Read accelerometer X, Y, or Z axis (combines low and high bytes)
+int16_t read_accelerometer_axis(int i2c_file_desc, uint8_t low_reg, uint8_t high_reg) {
+    uint8_t low = read_register_8(i2c_file_desc, low_reg);
+    uint8_t high = read_register_8(i2c_file_desc, high_reg);
+    return (int16_t)((high << 8) | low);  // Combine low and high bytes
+}
+
+// Enable accelerometer in normal mode
+void enable_accelerometer(int i2c_file_desc) {
+    uint8_t config_value = 0x60;  // ODR = 50 Hz, XYZ enabled (Refer to datasheet for control register settings)
+    write_register_8(i2c_file_desc, REG_CTRL1, config_value);
+}
+
+int main() {
+    int i2c_file_desc = init_i2c_bus(I2CDRV_LINUX_BUS, I2C_DEVICE_ADDRESS);
+    enable_accelerometer(i2c_file_desc);
+
+    while (1) {
+        int16_t x = read_accelerometer_axis(i2c_file_desc, REG_OUT_X_L, REG_OUT_X_H);
+        int16_t y = read_accelerometer_axis(i2c_file_desc, REG_OUT_Y_L, REG_OUT_Y_H);
+        int16_t z = read_accelerometer_axis(i2c_file_desc, REG_OUT_Z_L, REG_OUT_Z_H);
+
+        printf("Accelerometer readings - X: %d, Y: %d, Z: %d\n", x, y, z);
+        sleep(1);
+    }
+    // Close I2C Bus (this will never be reached unless loop is exited)
+    close_i2c_bus(i2c_file_desc);
+    printf("Accelerometer closed");
+
+    return 0;
+}
+
+/*#include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include "hal/audioMixer.h"
 #include "hal/helper.h"
@@ -75,4 +113,4 @@ int main() {
     AudioMixer_cleanup();
 
     return 0;
-}
+}*/
