@@ -8,50 +8,28 @@
 int16_t read_accelerometer_axis(int i2c_file_desc, uint8_t low_reg, uint8_t high_reg) {
     uint8_t low = read_register_8(i2c_file_desc, low_reg);
     uint8_t high = read_register_8(i2c_file_desc, high_reg);
-    return (int16_t)((((high << 8) | low))>>2);  // Combine low and high bytes
+    return (int16_t)(((high << 8) | low))>>2;  // Combine low and high bytes
 }
 
 // Enable accelerometer in normal mode
 void enable_accelerometer(int i2c_file_desc) {
-    uint8_t config_value = 0x60;  // ODR = 50 Hz, XYZ enabled (Refer to datasheet for control register settings)
+    uint8_t config_value = 0x50;  // ODR = 50 Hz, XYZ enabled (Refer to datasheet for control register settings)
     write_register_8(i2c_file_desc, REG_CTRL1, config_value);
-}
-void calibrate_offsets(int i2c_file_desc, int16_t *offset_x, int16_t *offset_y, int16_t *offset_z) {
-    int32_t sum_x = 0, sum_y = 0, sum_z = 0;
-    for (int i = 0; i < NUM_CALIBRATION_SAMPLES; i++) {
-        int16_t x = read_accelerometer_axis(i2c_file_desc, REG_OUT_X_L, REG_OUT_X_H);
-        int16_t y = read_accelerometer_axis(i2c_file_desc, REG_OUT_Y_L, REG_OUT_Y_H);
-        int16_t z = read_accelerometer_axis(i2c_file_desc, REG_OUT_Z_L, REG_OUT_Z_H);
-        sum_x += x;
-        sum_y += y;
-        sum_z += z;
-        sleep_ms(10); // Wait 10ms between samples
-    }
-    *offset_x = sum_x / NUM_CALIBRATION_SAMPLES;
-    *offset_y = sum_y / NUM_CALIBRATION_SAMPLES;
-    *offset_z = sum_z / NUM_CALIBRATION_SAMPLES;
 }
 
 int main() {
     int i2c_file_desc = init_i2c_bus(I2CDRV_LINUX_BUS, I2C_DEVICE_ADDRESS);
     enable_accelerometer(i2c_file_desc);
-    sleep_ms(2000);
-    
-    int16_t offset_x, offset_y, offset_z;
-    calibrate_offsets(i2c_file_desc, &offset_x, &offset_y, &offset_z);
-    printf("Calibration offsets - X: %d, Y: %d, Z: %d\n", offset_x, offset_y, offset_z);
-
+    int count = 0, sumX = 0, sumY = 0, sumZ = 0;
     while (1) {
         int16_t x = read_accelerometer_axis(i2c_file_desc, REG_OUT_X_L, REG_OUT_X_H);
         int16_t y = read_accelerometer_axis(i2c_file_desc, REG_OUT_Y_L, REG_OUT_Y_H);
         int16_t z = read_accelerometer_axis(i2c_file_desc, REG_OUT_Z_L, REG_OUT_Z_H);
-
-        // Subtract the calculated offsets to get calibrated readings
-        int16_t calibrated_x = x - offset_x;
-        int16_t calibrated_y = y - offset_y;
-        int16_t calibrated_z = z - offset_z;
-
-        printf("Calibrated readings - X: %d, Y: %d, Z: %d\n", calibrated_x, calibrated_y, calibrated_z);
+        sumX +=x;
+        sumY +=y;
+        sumZ =+z;
+        count++;
+        printf("Calibrated readings - X: %d, Y: %d, Z: %d\n", sumX/count, sumY/count, sumZ/count);
         sleep_ms(400);
     }
     // Close I2C Bus (this will never be reached unless loop is exited)

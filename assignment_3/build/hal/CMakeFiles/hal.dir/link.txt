@@ -1,0 +1,2 @@
+/usr/bin/aarch64-linux-gnu-ar qc libhal.a CMakeFiles/hal.dir/src/audioMixer.c.o CMakeFiles/hal.dir/src/btn_statemachine.c.o CMakeFiles/hal.dir/src/gpio.c.o CMakeFiles/hal.dir/src/helper.c.o CMakeFiles/hal.dir/src/i2c_bus.c.o CMakeFiles/hal.dir/src/periodTimer.c.o CMakeFiles/hal.dir/src/rotar_statemachine.c.o CMakeFiles/hal.dir/src/udp.c.o
+/usr/bin/aarch64-linux-gnu-ranlib libhal.a
