@@ -7,9 +7,8 @@
 typedef enum{
     UP,   //0
     DOWN, //1
-    LEFT, //2
-    RIGHT,//3
-    CENTER//4
+    CENTER,//2
+    LEFT, //3
 } Joystick_direction;
 
 //initializing the joystick
