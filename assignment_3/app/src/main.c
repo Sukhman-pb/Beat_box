@@ -25,7 +25,7 @@ void calibrate_offsets(int i2c_file_desc, int16_t *offset_x, int16_t *offset_y, 
         sum_x += x;
         sum_y += y;
         sum_z += z;
-        usleep(10000); // Wait 10ms between samples
+        sleep_ms(10); // Wait 10ms between samples
     }
     *offset_x = sum_x / NUM_CALIBRATION_SAMPLES;
     *offset_y = sum_y / NUM_CALIBRATION_SAMPLES;
