@@ -8,7 +8,7 @@
 int16_t read_accelerometer_axis(int i2c_file_desc, uint8_t low_reg, uint8_t high_reg) {
     uint8_t low = read_register_8(i2c_file_desc, low_reg);
     uint8_t high = read_register_8(i2c_file_desc, high_reg);
-    return (int16_t)((high << 8) | low);  // Combine low and high bytes
+    return (int16_t)((((high << 8) | low))>>2);  // Combine low and high bytes
 }
 
 // Enable accelerometer in normal mode
