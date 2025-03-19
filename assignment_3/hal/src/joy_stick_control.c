@@ -85,7 +85,7 @@ void joystick_button(){
 
 int joystick_getScreenCount(){
     assert(isInit);
-    return BtnStateMachine_counterPressed();
+    return BtnStateMachine_counterPressed()%3;
 }
 
 void joystick_cancel(){

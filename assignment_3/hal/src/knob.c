@@ -38,7 +38,7 @@ void knob_cancel(){
     pthread_cancel(rotar);
 }
 int knob_getBeatNum(){
-    return BtnStateMachine_getValue();
+    return BtnStateMachine_getValue()%3;
 }
 int knob_getBPM(){
     return rotar_state_machine_get_value();

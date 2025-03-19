@@ -67,11 +67,19 @@ void DrawStuff_updateScreen(char* message)
 
     // Split message into lines based on '\n'
     char* line = strtok(message, "\n");
+    int line_number = 0;
+
     while (line != NULL) {
-        Paint_DrawString_EN(x, y, line, &Font16, WHITE, BLACK);
-        y_end = y + lineSpacing;  // Update the end y position
-        y += lineSpacing;  // Move to the next line
+        // Select font based on line number or content
+        sFONT* selectedFont = (line_number == 0) ? &Font24 : &Font16;  // Alternate font size
+        // Or customize based on content:
+        // sFONT* selectedFont = (strstr(line, "BPM") != NULL) ? &Font24 : &Font16;
+
+        Paint_DrawString_EN(x, y, line, selectedFont, WHITE, BLACK);
+        y_end = y + lineSpacing;
+        y += lineSpacing;
         line = strtok(NULL, "\n");
+        line_number++;
     }
 
     // Refresh only the area used by the text
