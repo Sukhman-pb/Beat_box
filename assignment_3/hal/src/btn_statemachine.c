@@ -17,7 +17,8 @@
 #define JOYSTICK_PIN       15
 
 
-static bool isInitialized = false;
+static bool isRotaryInit = false;
+static bool isJoyInit = false;
 
 struct GpioLine* s_lineBtn = NULL;
 struct GpioLine* s_lineJoy = NULL;
@@ -67,11 +68,11 @@ struct state states[] = {
 struct state statesJoy[] = {
     { // Not pressed
         .rising = {&statesJoy[0], NULL},  //sets the JoyisPressed to false
-        .falling = {&statesJoy[1], onPressJoy},
+        .falling = {&statesJoy[1], NULL},
     },
 
     { // Pressed
-        .rising = {&statesJoy[0], NULL},
+        .rising = {&statesJoy[0], onPressJoy},
         .falling = {&statesJoy[1], NULL},
     },
 };
@@ -83,18 +84,26 @@ struct state statesJoy[] = {
 struct state* pCurrentState = &states[0];
 struct state* pCurrentStateJoy = &statesJoy[0];
 
-void BtnStateMachine_init()
+void BtnStateMachine_rotaryInit()
 {
-    assert(!isInitialized);
+    assert(!isRotaryInit);
     s_lineBtn = Gpio_openForEvents(ROTARY_CHIP,  ROTARY_ENCODER_PIN);
-    s_lineJoy = Gpio_openForEvents(JOYSTICK_CHIP, JOYSTICK_PIN);
-    isInitialized = true;
+    isRotaryInit = true;
 }
-void BtnStateMachine_cleanup()
+void BtnStateMachine_joyInit()
 {
-    assert(isInitialized);
-    isInitialized = false;
+    assert(!isJoyInit);
+    s_lineJoy = Gpio_openForEvents(JOYSTICK_CHIP, JOYSTICK_PIN);
+    isJoyInit = true;
+}
+void BtnStateMachine_RotBtnCleanup()
+{
+    assert(isRotaryInit);
+    isRotaryInit = false;
     Gpio_close(s_lineBtn);
+}
+void BtnStateMachine_JoyCleanup(){
+    assert(isJoyInit);
     Gpio_close(s_lineJoy);
 }
 
@@ -107,6 +116,7 @@ bool BtnStateMachine_isPressed(){
     return joyIsPressed;
 }
 
+//this is for joystick
 int BtnStateMachine_counterPressed(){
     return general_counter;
 }
@@ -114,7 +124,7 @@ int BtnStateMachine_counterPressed(){
 // TODO: This should be on a background thread!
 void BtnStateMachine_rotary()
 {
-    assert(isInitialized);
+    assert(isRotaryInit);
 
     //printf("\n\nWaiting for an event...\n");
     // while (true) {
@@ -177,7 +187,7 @@ void BtnStateMachine_rotary()
 
 void BtnStateMachine_joystick()
 {
-    assert(isInitialized);
+    assert(isJoyInit);
 
     //printf("\n\nWaiting for an event...\n");
     // while (true) {

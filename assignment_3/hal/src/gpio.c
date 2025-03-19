@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <gpiod.h>
 #include <assert.h>
-
+#include <stdatomic.h>
+#include <pthread.h>
 //taken from this link downlodable file with file name gpio.c https://opencoursehub.cs.sfu.ca/bfraser/solutions/433/guide-code/rotary_encoder/
 // Relies on the gpiod library.
 // Insallation for cross compiling:
@@ -22,6 +23,7 @@
 
 
 static bool s_isInitialized = false;
+pthread_mutex_t boolean_mut = PTHREAD_MUTEX_INITIALIZER;
 
 static char* s_chipNames[] = {
     "gpiochip0",
@@ -34,6 +36,7 @@ static struct gpiod_chip* s_openGpiodChips[GPIO_NUM_CHIPS];
 
 void Gpio_initialize(void)
 {
+    assert(!s_isInitialized);
     for (int i = 0; i < GPIO_NUM_CHIPS; i++) {
          // Open GPIO chip
         s_openGpiodChips[i] = gpiod_chip_open_by_name(s_chipNames[i]);
@@ -43,6 +46,7 @@ void Gpio_initialize(void)
         }
     }
     s_isInitialized = true;
+  
 }
 
 void Gpio_cleanup(void)

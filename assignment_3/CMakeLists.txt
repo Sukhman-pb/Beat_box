@@ -16,7 +16,7 @@ add_compile_options(-fdiagnostics-color)
 # Enable PThread and ALSA library for linking
 add_compile_options(-pthread)
 add_link_options(-pthread)
-find_package(ALSA REQUIRED)
+#find_package(ALSA REQUIRED)
 
 # Define _POSIX_C_SOURCE to enable POSIX-specific functionality (e.g., nanosleep)
 add_compile_definitions(_POSIX_C_SOURCE=200809L)
@@ -28,4 +28,4 @@ add_subdirectory(hal)
 add_subdirectory(app)
 
 # Link ALSA in hal module (or wherever `audioMixer.c` is used)
-target_link_libraries(hal PRIVATE ALSA::ALSA)
+#target_link_libraries(hal PRIVATE ALSA::ALSA)

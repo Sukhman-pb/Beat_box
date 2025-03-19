@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "btn_statemachine.h"
 //for switcsh cases and modularity
 typedef enum{
     UP,   //0
@@ -25,7 +26,13 @@ int joystick_init(void);
 //returns up or down or center
 Joystick_direction joystick_get_y(int i2c_file_desc);
 
+int joystick_getVol(void);
 
+int joystick_getScreenCount(void);
+
+void joystick_button(void);
+
+void joystick_cancel(void);
 //closes the joystick
 //parameter description
 //i2c_file_desc: the file descriptor of the i2c bus that we get from the joystick_init function

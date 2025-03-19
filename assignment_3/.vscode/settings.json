@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "pthread.h": "c",
+        "helper.h": "c",
+        "rotar_statemachine.h": "c",
+        "btn_statemachine.h": "c",
+        "joy_stick_control.h": "c",
+        "knob.h": "c"
+    }
+}

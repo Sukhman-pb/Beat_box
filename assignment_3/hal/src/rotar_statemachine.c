@@ -18,11 +18,11 @@ static bool is_initialized = false;
 static struct GpioLine* s_lineA = NULL;
 static struct GpioLine* s_lineB = NULL;
 //atomic variable to store the counter
-static atomic_int counter = 10;        //this is set to 10 as this value will be sent to the value frequency.
+static atomic_int counter = 120;        //this is set to 10 as this value will be sent to the value frequency.
 static atomic_int count_cw = 0;        //if this is 3 then only add to the counter i.e. counter clockwise
 static atomic_int count_ccw = 0;       //if this is 3 then only subtract to the counter  i.e. counter clockwise                           
 //thread to run the state machine
-pthread_t rotary_thread;
+//pthread_t rotary_thread;
 //data type to store the next state and the action to be performed
 struct stateEvent {
     struct state* pNextState;
@@ -53,8 +53,8 @@ static void inc_counter_clockwise(void){
 //increase the counter by 1 if clockwise cycle is completed
 static void rotary_clockwise(void){
     if(count_cw >= 3){
-        if(counter<500){counter++;}
-        else{atomic_store(&counter,500);}
+        if(counter<300){counter++;}
+        else{atomic_store(&counter,300);}
         reset_counter();
     }
     //remove this else statement after testing
@@ -67,10 +67,10 @@ static void rotary_clockwise(void){
 //decrease the counter by 1 if counter clockwise cycle is completed.
 static void rotary_counter_clockwise(void){
     if(count_ccw >= 3){
-        if(counter>0)
+        if(counter>40)
         {counter--;}
         else
-        {atomic_store(&counter, 0);}
+        {atomic_store(&counter, 40);}
         reset_counter();
     }
     //remove this else statement after testing 
@@ -85,45 +85,39 @@ static void rotary_counter_clockwise(void){
 
 
 //STATE MACHINE DESCRIPTION
-struct state states[] = {
+struct state states1[] = {
     {// 0
-        .a_rising  = {&states[0], NULL},                        //on A rising stay in 0
-        .a_falling = {&states[1], inc_clockwise},               //on A falling move from 0->1
-        .b_rising  = {&states[0], NULL},                        //on B rising stay in 0 
-        .b_falling = {&states[3], inc_counter_clockwise},       //on B falling move from 0->3
+        .a_rising  = {&states1[0], NULL},                        //on A rising stay in 0
+        .a_falling = {&states1[1], inc_clockwise},               //on A falling move from 0->1
+        .b_rising  = {&states1[0], NULL},                        //on B rising stay in 0 
+        .b_falling = {&states1[3], inc_counter_clockwise},       //on B falling move from 0->3
     },
 
     {// 1
-        .a_rising  = {&states[0], rotary_counter_clockwise},    //on A rising move from 1->REST and counter - 1  
-        .a_falling = {&states[1], NULL},                        //on A falling stay in 1
-        .b_rising  = {&states[1], NULL},                        //on B rising stay in 1
-        .b_falling = {&states[2], inc_clockwise},                        //on B falling move from 1->2   
+        .a_rising  = {&states1[0], rotary_counter_clockwise},    //on A rising move from 1->REST and counter - 1  
+        .a_falling = {&states1[1], NULL},                        //on A falling stay in 1
+        .b_rising  = {&states1[1], NULL},                        //on B rising stay in 1
+        .b_falling = {&states1[2], inc_clockwise},                        //on B falling move from 1->2   
     },
     {// 2
-        .a_rising  = {&states[3], inc_clockwise},               //on A rising move from 2->3
-        .a_falling = {&states[2], NULL},                        //on A falling stay in 2
-        .b_rising  = {&states[1], inc_counter_clockwise},       //on B rising move from 2->1    
-        .b_falling = {&states[2], NULL},                        //on B falling stay in 2
+        .a_rising  = {&states1[3], inc_clockwise},               //on A rising move from 2->3
+        .a_falling = {&states1[2], NULL},                        //on A falling stay in 2
+        .b_rising  = {&states1[1], inc_counter_clockwise},       //on B rising move from 2->1    
+        .b_falling = {&states1[2], NULL},                        //on B falling stay in 2
     },
     {// 3
-        .a_rising  = {&states[3], NULL},                        //on A rising stay in 3 
-        .a_falling = {&states[2], inc_counter_clockwise},                        //on A falling move from 3->2   
-        .b_rising  = {&states[0], rotary_clockwise},            //on B rising move from 3->REST and counter + 1
-        .b_falling = {&states[3], NULL},                        //on B falling stay in 3
+        .a_rising  = {&states1[3], NULL},                        //on A rising stay in 3 
+        .a_falling = {&states1[2], inc_counter_clockwise},                        //on A falling move from 3->2   
+        .b_rising  = {&states1[0], rotary_clockwise},            //on B rising move from 3->REST and counter + 1
+        .b_falling = {&states1[3], NULL},                        //on B falling stay in 3
     },
 };
 
 //this is the beginning state of the state machine
-struct state* pCurrentState = &states[0];
+struct state* pCurrentState1 = &states1[0];
 
 //this is the void function that is called by the thread to run the state machine
-void * rotar_thread(void* arg){
-    (void)arg;
-    while(is_initialized){
-        rotar_state_machine_do_state();
-    }
-    return NULL;
-}
+
 
 
 void rotar_state_machine_init(){
@@ -132,7 +126,7 @@ void rotar_state_machine_init(){
     s_lineB = Gpio_openForEvents(GPIO_CHIP, GPIO_LINE_B);
     is_initialized = true;
     reset_counter();
-    pthread_create(&rotary_thread, NULL, rotar_thread,NULL);
+    //pthread_create(&rotary_thread, NULL, rotar_thread,NULL);
 }
 
 
@@ -141,8 +135,8 @@ void rotar_state_machine_cleanup(){
     is_initialized = false;
     Gpio_close(s_lineA);
     Gpio_close(s_lineB);
-    pthread_cancel(rotary_thread);
-    pthread_join(rotary_thread,NULL);
+    //pthread_cancel(rotary_thread);
+    //pthread_join(rotary_thread,NULL);
 }
 
 
@@ -185,18 +179,18 @@ void rotar_state_machine_do_state(){
         struct stateEvent* pEvent = NULL;
         if(is_A){// Process A rising or falling
                 if(is_rising){
-                    pEvent = &pCurrentState->a_rising;
+                    pEvent = &pCurrentState1->a_rising;
                 }
                 else{
-                    pEvent = &pCurrentState->a_falling;
+                    pEvent = &pCurrentState1->a_falling;
                 }    
         } 
         else if(is_B) {// Process B rising or falling
                 if(is_rising){
-                    pEvent = &pCurrentState->b_rising;
+                    pEvent = &pCurrentState1->b_rising;
                 }
                 else{
-                    pEvent = &pCurrentState->b_falling;
+                    pEvent = &pCurrentState1->b_falling;
                 }
         }
         // Execute the action if any
@@ -205,6 +199,6 @@ void rotar_state_machine_do_state(){
             pEvent->action();  
         }
         //change the current state to the next state
-        pCurrentState = pEvent->pNextState;
+        pCurrentState1 = pEvent->pNextState;
     }
 }

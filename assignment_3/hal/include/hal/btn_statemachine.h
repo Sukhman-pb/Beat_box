@@ -3,8 +3,10 @@
 
 #include <stdbool.h>
 
-void BtnStateMachine_init(void);
-void BtnStateMachine_cleanup(void);
+void BtnStateMachine_rotaryInit(void);
+void BtnStateMachine_joyInit(void);
+void BtnStateMachine_RotBtnCleanup(void);
+void BtnStateMachine_JoyCleanup(void);
 
 int BtnStateMachine_getValue(void);
 bool BtnStateMachine_isPressed(void);
