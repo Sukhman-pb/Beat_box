@@ -1,7 +1,7 @@
 #ifndef UDP_H
 #define UDP_H
-#define RECVBUFLEN 64     //we will only take smaller messages
-#define SENDBUFLEN 1500   //we need to send alot of data so we need a bigger buffer needs to be atleadt 1500 in order to recieve the fragmentation
+#define RECVBUFLEN 500     //we will only take smaller messages
+#define SENDBUFLEN 500   //we need to send alot of data so we need a bigger buffer needs to be atleadt 1500 in order to recieve the fragmentation
 #define SUCCESS 0
 #define FAIL -1
 #define PORT 12345

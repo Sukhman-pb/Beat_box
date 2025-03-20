@@ -78,6 +78,11 @@ int joystick_getVol(){
     return counter;
 }
 
+void joystick_setVol(int vol){
+    assert(isInit);
+    counter = vol;
+}
+
 void joystick_button(){
     assert(isInit);
     BtnStateMachine_joystick();

@@ -43,6 +43,12 @@ int knob_getBeatNum(){
 int knob_getBPM(){
     return rotar_state_machine_get_value();
 }
+void knob_setBeatNum(int val){
+    BtnStateMachine_setValue(val);
+}
+void knob_setBPM(int val){
+    rotar_state_machine_set_value(val);
+}
 void knob_close(void){
     assert(isInitialized);
     pthread_join(button1, NULL);

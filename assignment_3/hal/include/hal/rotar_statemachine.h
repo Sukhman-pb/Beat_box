@@ -27,6 +27,9 @@ int rotar_state_machine_get_value(void);
 /*This function is used to get the counter or set the counter value on every rotation
 * This is event based function that runs the state machine and changes the counter value based on 4 states and how it is cycled through it
 */
+
+void rotar_state_machine_set_value(int val);
+
 void rotar_state_machine_do_state();
 
 //This function is used to set the counter value to the value passed as argument

@@ -112,6 +112,10 @@ int BtnStateMachine_getValue()
     //keeps the count of the counters in the range of 0 to 2
     return counter_rotary;
 }
+void BtnStateMachine_setValue(int val){
+    counter_rotary = val;
+}
+
 bool BtnStateMachine_isPressed(){
     return joyIsPressed;
 }

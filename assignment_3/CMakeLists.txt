@@ -1,4 +1,3 @@
-
 # CMake Build Configuration for root of project
 cmake_minimum_required(VERSION 3.18)
 project(my_hello_world VERSION 1.0 DESCRIPTION "Starter project" LANGUAGES C)
@@ -10,8 +9,8 @@ add_compile_options(-fdiagnostics-color)
 
 # Enable address sanitizer
 # (Comment this out to make your code faster)
-#add_compile_options(-fsanitize=address)
-#add_link_options(-fsanitize=address)
+# add_compile_options(-fsanitize=address)
+# add_link_options(-fsanitize=address)
 
 # Enable PThread and ALSA library for linking
 add_compile_options(-pthread)
@@ -29,3 +28,10 @@ add_subdirectory(app)
 
 # Link ALSA in hal module (or wherever `audioMixer.c` is used)
 target_link_libraries(hal PRIVATE ALSA::ALSA)
+
+
+# add_custom_target(run_valgrind
+#     COMMAND valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --error-exitcode=1 ./beatbox
+#     DEPENDS beatbox
+#     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+# )

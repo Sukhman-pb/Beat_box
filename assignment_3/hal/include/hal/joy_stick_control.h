@@ -28,6 +28,8 @@ Joystick_direction joystick_get_y(int i2c_file_desc);
 
 int joystick_getVol(void);
 
+void joystick_setVol(int vol);
+
 int joystick_getScreenCount(void);
 
 void joystick_button(void);

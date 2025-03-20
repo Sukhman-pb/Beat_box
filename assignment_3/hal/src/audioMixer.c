@@ -324,7 +324,7 @@ static void fillPlaybackBuffer(short *buff, int size)
 				//adding the sound bite to the buffer
 				int mixedSample = buff[j] + (soundBites[i].pSound->pData[offset + j]/count);
 
-				// 5️⃣ Clip values to avoid overflow distortion
+				// Clip values to avoid overflow distortion
 				if (mixedSample > SHRT_MAX) mixedSample = SHRT_MAX;
 				if (mixedSample < SHRT_MIN) mixedSample = SHRT_MIN;
 

@@ -143,7 +143,9 @@ void rotar_state_machine_cleanup(){
 int rotar_state_machine_get_value(){
     return counter;
 }
-
+void rotar_state_machine_set_value(int val){
+    counter = val;
+}
 
 void set_counter(int value){
     atomic_store(&counter, value);

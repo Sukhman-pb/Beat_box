@@ -9,6 +9,7 @@ void BtnStateMachine_RotBtnCleanup(void);
 void BtnStateMachine_JoyCleanup(void);
 
 int BtnStateMachine_getValue(void);
+void BtnStateMachine_setValue(int val);
 bool BtnStateMachine_isPressed(void);
 int BtnStateMachine_counterPressed(void);
 
